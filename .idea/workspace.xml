@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="fix: fixed username">
+    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="misc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607986690146</updated>
-      <workItem from="1607986691586" duration="2389000" />
+      <workItem from="1607986691586" duration="2536000" />
     </task>
     <task id="LOCAL-00001" summary="Task: updated DB file">
       <created>1607986847404</created>
@@ -132,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607988901501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="misc">
+      <created>1607989116527</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607989116527</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,13 +163,14 @@
     <MESSAGE value="Task: initial hw files" />
     <MESSAGE value="Task: switched over to gas mileage" />
     <MESSAGE value="fix: fixed username" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed username" />
+    <MESSAGE value="misc" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2470" y="71" width="1094" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607989099440">
+    <state x="2470" y="71" width="1094" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607989222698">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2470" y="71" width="1094" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989099440" />
+    <state x="2470" y="71" width="1094" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989222698" />
     <state x="2748" y="240" key="DockerComposeFileDialog" timestamp="1607988988996">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
@@ -170,9 +179,25 @@
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
     <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607988737277" />
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1607988861956">
+    <state width="1248" height="294" key="GridCell.Tab.0.bottom" timestamp="1607989193050">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607988861956" />
+    <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989193050" />
+    <state width="1248" height="294" key="GridCell.Tab.0.center" timestamp="1607989193050">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989193050" />
+    <state width="1248" height="294" key="GridCell.Tab.0.left" timestamp="1607989193050">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989193050" />
+    <state width="1248" height="294" key="GridCell.Tab.0.right" timestamp="1607989193050">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989193050" />
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1607989119870">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989119870" />
   </component>
 </project>
