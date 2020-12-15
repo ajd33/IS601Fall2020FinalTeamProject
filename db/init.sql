@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS gasTable (
     PRIMARY KEY (id)
 );
 INSERT INTO gasTable (`Gallons`,`Mileage`,`Price`,`Column_4`) VALUES
-    (13,350,20,NULL),
+    (13,350,20,NULL);
 

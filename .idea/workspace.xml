@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="misc">
+    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="bugfix: replaced year with gallons">
+      <change beforePath="$PROJECT_DIR$/.idea/IS601Fall2020FinalTeamProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IS601Fall2020FinalTeamProject1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Docker" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="removeVolumesOnComposeDown" value="true" />
@@ -83,7 +84,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607986690146</updated>
-      <workItem from="1607986691586" duration="3854000" />
+      <workItem from="1607986691586" duration="4117000" />
+      <workItem from="1607993290017" duration="542000" />
     </task>
     <task id="LOCAL-00001" summary="Task: updated DB file">
       <created>1607986847404</created>
@@ -148,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607989254415</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bugfix: replaced year with gallons">
+      <created>1607992407006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607992407006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="bugfix: replaced year with gallons">
+      <created>1607992431812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607992431812</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +180,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Task: updated DB file" />
@@ -172,40 +189,41 @@
     <MESSAGE value="Task: switched over to gas mileage" />
     <MESSAGE value="fix: fixed username" />
     <MESSAGE value="misc" />
-    <option name="LAST_COMMIT_MESSAGE" value="misc" />
+    <MESSAGE value="bugfix: replaced year with gallons" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix: replaced year with gallons" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2470" y="71" width="1094" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607989222698">
+    <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607993727849">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2470" y="71" width="1094" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989222698" />
-    <state x="2748" y="240" key="DockerComposeFileDialog" timestamp="1607988988996">
+    <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993727849" />
+    <state x="2748" y="240" key="DockerComposeFileDialog" timestamp="1607993391839">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2748" y="240" key="DockerComposeFileDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607988988996" />
-    <state x="2690" y="127" key="FileChooserDialogImpl" timestamp="1607992042175">
+    <state x="2748" y="240" key="DockerComposeFileDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993391839" />
+    <state x="2690" y="127" key="FileChooserDialogImpl" timestamp="1607993331173">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607992042175" />
-    <state width="1248" height="294" key="GridCell.Tab.0.bottom" timestamp="1607989275789">
+    <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993331173" />
+    <state width="1248" height="294" key="GridCell.Tab.0.bottom" timestamp="1607993736363">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989275789" />
-    <state width="1248" height="294" key="GridCell.Tab.0.center" timestamp="1607989275789">
+    <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="294" key="GridCell.Tab.0.center" timestamp="1607993736363">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989275789" />
-    <state width="1248" height="294" key="GridCell.Tab.0.left" timestamp="1607989275789">
+    <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="294" key="GridCell.Tab.0.left" timestamp="1607993736363">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989275789" />
-    <state width="1248" height="294" key="GridCell.Tab.0.right" timestamp="1607989275789">
+    <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="294" key="GridCell.Tab.0.right" timestamp="1607993736363">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989275789" />
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1607989256367">
+    <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1607992433536">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607989256367" />
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607992433536" />
   </component>
 </project>
