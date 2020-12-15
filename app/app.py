@@ -21,8 +21,8 @@ app.config['MAIL_SERVER'] = 'smtp.sendgrid.net'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'apikey'
-app.config['MAIL_PASSWORD'] = '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'
-app.config['MAIL_DEFAULT_SENDER'] = 'jj79@njit.edu'
+app.config['MAIL_PASSWORD'] = ''
+app.config['MAIL_DEFAULT_SENDER'] = ''
 mail = Mail(app)
 
 
