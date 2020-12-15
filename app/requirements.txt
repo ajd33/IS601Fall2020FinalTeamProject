@@ -1,5 +1,6 @@
 Flask
-flask-mysql
+mysql-connector
 simplejson
+flask-mysql
 werkzeug
 flask-mail

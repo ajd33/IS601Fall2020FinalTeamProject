@@ -1,7 +1,19 @@
-CREATE DATABASE finalApp;
-use finalApp;
+CREATE DATABASE gasMileage;
+use gasMileage;
 
-create table if not exists finalApp.users
+CREATE TABLE IF NOT EXISTS gasTable (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `Gallons` INT,
+    `Mileage` INT,
+    `Price` INT,
+    `Column_4` VARCHAR(10) CHARACTER SET utf8,
+    PRIMARY KEY (id)
+);
+INSERT INTO gasTable (`Gallons`,`Mileage`,`Price`,`Column_4`) VALUES
+    (13,350,20,NULL);
+
+
+create table if not exists gasMileage.users
 (
 	id int auto_increment,
 	first_name varchar(20) null,
@@ -15,5 +27,5 @@ create table if not exists finalApp.users
 		unique (id)
 );
 
-alter table finalApp.users
+alter table gasMileage.users
 	add primary key (id);
