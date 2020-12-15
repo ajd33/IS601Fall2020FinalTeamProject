@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="rixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +36,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="b1131dae-be4a-491f-854b-80bb0875b18c" />
+  <component name="JupyterTrust" id="ab37d9ce-4ec3-401c-85b2-cb7ed97dfc0d" />
   <component name="ProjectId" id="1lfSXCk2ATgkMZ7Uj9JYQQCqnT0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -83,6 +84,7 @@
       <updated>1607986690146</updated>
       <workItem from="1607986691586" duration="4117000" />
       <workItem from="1607993290017" duration="904000" />
+      <workItem from="1607996227902" duration="241000" />
     </task>
     <task id="LOCAL-00001" summary="Task: updated DB file">
       <created>1607986847404</created>
@@ -198,9 +200,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="rixes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607993727849">
-      <screen x="1982" y="-179" width="1858" height="1080" />
+    <state x="454" y="202" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607996281575">
+      <screen x="0" y="23" width="1280" height="709" />
     </state>
+    <state x="454" y="202" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.709@0.23.1280.709" timestamp="1607996281575" />
     <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993727849" />
     <state x="2748" y="240" key="DockerComposeFileDialog" timestamp="1607993391839">
       <screen x="1982" y="-179" width="1858" height="1080" />

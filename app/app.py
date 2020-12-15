@@ -12,13 +12,13 @@ import secrets
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
-mysql = MySQL(cursorclass=DictCursor)
+flask_mysql = MySQL(cursorclass=DictCursor)
 app.config['MYSQL_DATABASE_HOST'] = 'db'
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'finalApp'
-mysql.init_app(app)
+flask_mysql.init_app(app)
 
 app.config['SECRET_KEY'] = 'top-secret!'
 app.config['MAIL_SERVER'] = 'smtp.sendgrid.net'
@@ -170,7 +170,7 @@ def login():
 def login_user():
     req = request.form
     password = req.get('password').strip()
-    cursor = mysql.get_db().cursor()
+    cursor = flask_mysql.get_db().cursor()
     cursor.execute('SELECT * FROM users WHERE email=%s', req.get('email').strip())
     result = cursor.fetchall()
     if len(result) != 0:
@@ -199,7 +199,7 @@ def send_verification(url_token, email):
 
 @app.route('/verify/<url_token>', methods=['GET'])
 def verify(url_token):
-    cursor = mysql.get_db().cursor()
+    cursor = flask_mysql.get_db().cursor()
     cursor.execute('SELECT * FROM users WHERE validation_token=%s', url_token.strip())
     result = cursor.fetchall()
     if len(result) != 0:
@@ -217,7 +217,7 @@ def create_user():
     if password != re_enter_password:
         return render_template('signup.html', message={'text': 'Passwords does not match'})
     url_token = secrets.token_urlsafe(16)
-    cursor = mysql.get_db().cursor()
+    cursor = flask_mysql.get_db().cursor()
     cursor.execute('SELECT * FROM users WHERE id=%s', req.get('email').strip())
     result = cursor.fetchall()
     if len(result) != 0:
@@ -227,7 +227,7 @@ def create_user():
     val = (
         req.get('first_name'), req.get('last_name'), req.get('email'), password_hash, url_token)
     cursor.execute(sql, val)
-    mysql.get_db().commit()
+    flask_mysql.get_db().commit()
     send_verification(url_token, req.get('email').strip())
     return render_template('verify.html')
 
