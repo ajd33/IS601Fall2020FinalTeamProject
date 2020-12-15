@@ -93,8 +93,6 @@ def form_delete_post(mileage_id):
     db.delete_mileage(mileage_id)
     return redirect("/", code=302)
 
-# API version 1
-
 @app.route('/api/v1/mileage')
 def api_mileage() -> str:
     js = json.dumps(db.get_alldata())
@@ -129,9 +127,6 @@ def api_delete(mileage_id) -> str:
     db.delete_mileage(mileage_id)
     resp = Response(status=210, mimetype='application/json')
     return resp
-
-
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True) # set debug=False on deployment
