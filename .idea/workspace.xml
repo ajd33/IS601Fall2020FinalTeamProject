@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="rixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="ab37d9ce-4ec3-401c-85b2-cb7ed97dfc0d" />
+  <component name="ProjectId" id="1lfSXCk2ATgkMZ7Uj9JYQQCqnT0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ajpdr\Google Drive\NJIT\.Fall 2020\IS-601 Web Developement\IS601Fall2020FinalTeamProject1" />
+      <recent name="C:\Users\ajpdr\Google Drive\NJIT\.Fall 2020\IS-601 Web Developement\IS601Fall2020FinalTeamProject1\db" />
+      <recent name="C:\Users\ajpdr\Google Drive\NJIT\.Fall 2020\IS-601 Web Developement\IS601Fall2020FinalTeamProject1\app" />
+      <recent name="C:\Users\ajpdr\Google Drive\NJIT\.Fall 2020\IS-601 Web Developement\IS601Fall2020FinalTeamProject1\app\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="removeVolumesOnComposeDown" value="true" />
+          <option name="commandLineOptions" value="--build" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="" />
+      <created>1607986690146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607986690146</updated>
+      <workItem from="1607986691586" duration="4117000" />
+      <workItem from="1607993290017" duration="904000" />
+      <workItem from="1607996227902" duration="241000" />
+    </task>
+    <task id="LOCAL-00001" summary="Task: updated DB file">
+      <created>1607986847404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607986847404</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Task: start over">
+      <created>1607987009059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607987009059</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Task: start over">
+      <created>1607987428903</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607987428903</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Task: initial hw files">
+      <created>1607987806894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607987806894</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Task: switched over to gas mileage">
+      <created>1607988687847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607988687847</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: fixed username">
+      <created>1607988858790</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607988858790</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: fixed username">
+      <created>1607988901501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607988901501</updated>
+    </task>
+    <task id="LOCAL-00008" summary="misc">
+      <created>1607989116527</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607989116527</updated>
+    </task>
+    <task id="LOCAL-00009" summary="misc">
+      <created>1607989254415</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607989254415</updated>
+    </task>
+    <task id="LOCAL-00010" summary="bugfix: replaced year with gallons">
+      <created>1607992407006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607992407006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="bugfix: replaced year with gallons">
+      <created>1607992431812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607992431812</updated>
+    </task>
+    <task id="LOCAL-00012" summary="rixes">
+      <created>1607994064528</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607994064528</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Task: updated DB file" />
+    <MESSAGE value="Task: start over" />
+    <MESSAGE value="Task: initial hw files" />
+    <MESSAGE value="Task: switched over to gas mileage" />
+    <MESSAGE value="fix: fixed username" />
+    <MESSAGE value="misc" />
+    <MESSAGE value="bugfix: replaced year with gallons" />
+    <MESSAGE value="rixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="rixes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="454" y="202" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607996281575">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="454" y="202" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.709@0.23.1280.709" timestamp="1607996281575" />
+    <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993727849" />
+    <state x="2748" y="240" key="DockerComposeFileDialog" timestamp="1607993391839">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state x="2748" y="240" key="DockerComposeFileDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993391839" />
+    <state x="2690" y="127" key="FileChooserDialogImpl" timestamp="1607993331173">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993331173" />
+    <state width="1248" height="294" key="GridCell.Tab.0.bottom" timestamp="1607993736363">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="294" key="GridCell.Tab.0.center" timestamp="1607993736363">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="294" key="GridCell.Tab.0.left" timestamp="1607993736363">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="294" key="GridCell.Tab.0.right" timestamp="1607993736363">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1607994065643">
+      <screen x="1982" y="-179" width="1858" height="1080" />
+    </state>
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607994065643" />
+  </component>
+</project>

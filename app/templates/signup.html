@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Sign Up</h1>
+    {% if message %}
+        <h2>{{ message.text }}</h2>
+    {% endif %}
+<form action="/signup" method="post">
+            <div class="form-group col-md-6">
+                <label>First Name</label>
+                <input type="text" class="form-control" name="first_name" id="first_name">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="last_name" id="last_name">
+            </div>
+        <div class="form-group col-md-6">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" id="email">
+        </div>
+            <div class="form-group col-md-6">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" id="password">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Re-Enter Password</label>
+                <input type="password" class="form-control" name="re_enter_password" id="re_enter_password">
+            </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+{% endblock %}
