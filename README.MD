@@ -55,3 +55,6 @@
 - Option to edit/delete/view each user
 - When clicked on view admin can see gas information for that user
 - View page should let the admin edit/delete gas info
+
+<H2>Installation Instructions for Using the App with Docker</H2>
+
