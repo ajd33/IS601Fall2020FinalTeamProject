@@ -1,7 +1,7 @@
 from typing import List, Dict
 import simplejson as json
 import mysql.connector
-from flask import Flask, request, Response, redirect, session
+from flask import Flask, request, Response, redirect, session,flash
 from flask import render_template
 
 from flaskext.mysql import MySQL
@@ -86,6 +86,7 @@ def index():
     else:
         return render_template('index.html')
 
+
 @app.route('/view/<int:mileage_id>', methods=['GET'])
 def record_view(mileage_id):
     mileage = db.get_mileage(mileage_id)
@@ -100,8 +101,8 @@ def form_edit_get(mileage_id):
 
 @app.route('/edit/<int:mileage_id>', methods=['POST'])
 def form_update_post(mileage_id):
-    mileage = int(request.form.get('Miles'))/int(request.form.get('Gallons'))
-    inputData = (request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), mileage,mileage_id)
+    mileage = int(request.form.get('Miles')) / int(request.form.get('Gallons'))
+    inputData = (request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), mileage, mileage_id)
     db.update_mileage(inputData)
     return redirect("/home", code=302)
 
@@ -113,9 +114,9 @@ def form_insert_get():
 
 @app.route('/mileage/new', methods=['POST'])
 def form_insert_post():
-    mileage = int(request.form.get('Miles'))/int(request.form.get('Gallons'))
+    mileage = int(request.form.get('Miles')) / int(request.form.get('Gallons'))
     inputData = (
-        request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), session['user_id'],mileage)
+        request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), session['user_id'], mileage)
     db.insert_mileage(inputData)
     return redirect("/home", code=302)
 
@@ -145,13 +146,14 @@ def login_user():
     req = request.form
     password = req.get('password').strip()
     cursor = flask_mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM users WHERE email=%s', req.get('email').strip())
+    cursor.execute('SELECT * FROM users WHERE email=%s and is_verified=1', req.get('email').strip())
     result = cursor.fetchall()
     if len(result) != 0:
         result_pass = result[0]['password_hash']
         if check_password_hash(result_pass, password):
             session['username'] = req.get('email')
             session['user_id'] = result[0]['id']
+            flash('You were successfully logged in')
             return redirect("/home")
         else:
             return render_template("/login.html", message={'text': 'Authentication Failed'})
@@ -165,7 +167,7 @@ def signup():
 
 
 def send_verification(url_token, email):
-    msg = Message('IS601 Final Web Application: Verify Email', recipients=[email])
+    msg = Message('Mileage Tracker: Verify Email', recipients=[email])
     msg.body = 'Thank you for creating an account with IS601 Final Web Application'
     msg.html = ('<h1>Please validate your email by click on the link given below</h1>'
                 'http://127.0.0.1:5000/verify/' + url_token)
@@ -180,6 +182,9 @@ def verify(url_token):
     if len(result) != 0:
         session['username'] = result[0]['email']
         session['user_id'] = result[0]['id']
+        cursor.execute('UPDATE users SET is_verified=%s WHERE email=%s', (1, result[0]['email']))
+        flask_mysql.get_db().commit()
+        flash('You were successfully logged in')
         return redirect('/home')
     else:
         return render_template('index.html')
@@ -194,7 +199,7 @@ def create_user():
         return render_template('signup.html', message={'text': 'Passwords does not match'})
     url_token = secrets.token_urlsafe(16)
     cursor = flask_mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM users WHERE id=%s', req.get('email').strip())
+    cursor.execute('SELECT * FROM users WHERE email=%s', req.get('email').strip())
     result = cursor.fetchall()
     if len(result) != 0:
         return render_template('signup.html', message={'text': 'User already exists'})
@@ -213,6 +218,7 @@ def logout():
     # remove the username from the session if it's there
     session.pop('username', None)
     session.pop('user_id', None)
+    flash('You were successfully logged out')
     return redirect("/")
 
 
