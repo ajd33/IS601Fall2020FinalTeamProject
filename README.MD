@@ -4,6 +4,7 @@
 
 <H2>Features and Credits</H2>
 <H3>1: Login - by Jeril Jose</H3>
+
 - Create table for users
 - Id
 - Email
@@ -28,6 +29,7 @@
 
 
 <H3>User Home Page - after login - by Andrew Drumm</H3>
+
 - Gas Mileage statistics 
 - Create an sql gas table 
 - Date purchased input
@@ -44,6 +46,7 @@
 
 
 <H3>Admin Page - by William Herman</H3>
+
 - Admin should be able to edit/delete user
 - Admin should be able to edit/delete gas info
 

@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="rixes">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="Task: added intial readme.md">
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607994064528</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Task: added intial readme.md">
+      <created>1608334330749</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608334330749</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +203,8 @@
     <MESSAGE value="misc" />
     <MESSAGE value="bugfix: replaced year with gallons" />
     <MESSAGE value="rixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="rixes" />
+    <MESSAGE value="Task: added intial readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task: added intial readme.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="497" y="182" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608259184755">
@@ -234,10 +241,10 @@
     </state>
     <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1607994065643">
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608334332314">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607994065643" />
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608334332314" />
     <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608333762174">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
