@@ -6,8 +6,10 @@
     <tr>
         <th scope="col">No.</th>
         <th scope="col">Gallons</th>
-        <th scope="col">Mileage</th>
+        <th scope="col">Miles</th>
         <th scope="col">Price</th>
+        <th scope="col">Mileage</th>
+
     </tr>
     </thead>
     <tbody>
@@ -15,8 +17,10 @@
     <tr>
         <td><a href="view/{{d.id}}">{{ d.id }}</a></td>
         <td>{{ d.Gallons }}</td>
-        <td>{{ d.Mileage }}</td>
+        <td>{{ d.Miles }}</td>
         <td>{{ d.Price }}</td>
+        <td>{{ d.Mileage }}</td>
+
     </tr>
     {% endfor %}
     </tbody>

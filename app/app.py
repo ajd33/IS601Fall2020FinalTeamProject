@@ -59,13 +59,13 @@ class MyDb:
 
     def update_mileage(self, inputData):
         cursor = self.connection.cursor(dictionary=True)
-        sql_update_query = """UPDATE gasTable t SET t.Gallons = %s, t.Mileage = %s, t.Price = %s WHERE t.id = %s """
+        sql_update_query = """UPDATE gasTable t SET t.Gallons = %s, t.Miles = %s, t.Price = %s, t.Mileage = %s WHERE t.id = %s """
         cursor.execute(sql_update_query, inputData)
         self.connection.commit()
 
     def insert_mileage(self, inputData):
         cursor = self.connection.cursor(dictionary=True)
-        sql_insert_query = """INSERT INTO gasTable (`Gallons`,Mileage,Price,user_id) VALUES (%s, %s, %s,%s) """
+        sql_insert_query = """INSERT INTO gasTable (`Gallons`,Miles,Price,user_id,Mileage) VALUES (%s, %s, %s,%s,%s) """
         cursor.execute(sql_insert_query, inputData)
         self.connection.commit()
 
@@ -100,7 +100,8 @@ def form_edit_get(mileage_id):
 
 @app.route('/edit/<int:mileage_id>', methods=['POST'])
 def form_update_post(mileage_id):
-    inputData = (request.form.get('Gallons'), request.form.get('Mileage'), request.form.get('Price'), mileage_id)
+    mileage = int(request.form.get('Miles'))/int(request.form.get('Gallons'))
+    inputData = (request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), mileage,mileage_id)
     db.update_mileage(inputData)
     return redirect("/home", code=302)
 
@@ -112,8 +113,9 @@ def form_insert_get():
 
 @app.route('/mileage/new', methods=['POST'])
 def form_insert_post():
+    mileage = int(request.form.get('Miles'))/int(request.form.get('Gallons'))
     inputData = (
-        request.form.get('Gallons'), request.form.get('Mileage'), request.form.get('Price'), session['user_id'])
+        request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), session['user_id'],mileage)
     db.insert_mileage(inputData)
     return redirect("/home", code=302)
 

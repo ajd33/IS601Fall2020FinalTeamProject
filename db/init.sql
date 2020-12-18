@@ -4,15 +4,12 @@ use gasMileage;
 CREATE TABLE IF NOT EXISTS gasTable (
     `id` INT NOT NULL AUTO_INCREMENT,
     `Gallons` INT,
-    `Mileage` INT,
+    `Miles` INT,
     `Price` INT,
-    `Column_4` VARCHAR(10) CHARACTER SET utf8,
+    `Mileage` FLOAT(11,2),
     `user_id` VARCHAR (20) CHARACTER SET utf8,
     PRIMARY KEY (id)
 );
-INSERT INTO gasTable (`Gallons`,`Mileage`,`Price`,`Column_4`) VALUES
-    (13,350,20,NULL);
-
 
 create table if not exists gasMileage.users
 (
