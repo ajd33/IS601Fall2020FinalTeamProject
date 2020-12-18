@@ -15,7 +15,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
-        Final Web Application
+        Gas Mileage Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +23,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-        {% if 'username' not in session %}
+            {% if 'username' not in session %}
             <li class="nav-item active">
                 <a class="nav-link" href="/signup">Signup<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/login">Login<span class="sr-only">(current)</span></a>
             </li>
-        {% endif %}
-            <li class="nav-item active">
-                {% if session['username'] %}
-                <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
-                {% endif %}
+            {% endif %}
+            {% if session['username'] %}
+            <li class="nav-item">
+                <a class="nav-link" href="/mileage/new">Enter New Gas Purchase <span
+                        class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
+
+            </li>
+            {% endif %}
         </ul>
     </div>
 </nav>

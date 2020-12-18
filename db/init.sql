@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS gasTable (
     `Mileage` INT,
     `Price` INT,
     `Column_4` VARCHAR(10) CHARACTER SET utf8,
+    `user_id` VARCHAR (20) CHARACTER SET utf8,
     PRIMARY KEY (id)
 );
 INSERT INTO gasTable (`Gallons`,`Mileage`,`Price`,`Column_4`) VALUES
