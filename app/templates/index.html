@@ -1,26 +1,11 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 {% block content %}
-<h2 style="margin-top: 30px">Gas Mileage Recorder Website</h2>
-<table class="table" style="margin-top: 30px">
-    <thead>
-    <tr>
-        <th scope="col">No.</th>
-        <th scope="col">Gallons</th>
-        <th scope="col">Mileage</th>
-        <th scope="col">Price</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for d in gasTable %}
-    <tr>
-        <td><a href="view/{{d.id}}">{{ d.id }}</a></td>
-        <td>{{ d.Gallons }}</td>
-        <td>{{ d.Mileage }}</td>
-        <td>{{ d.Price }}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Mileage Tracker</h1>
+    <p class="lead">Keep Track Of Your Car's Fuel Consumption</p>
+  </div>
+</div>
 {% endblock %}
 
 

@@ -2,7 +2,9 @@
 {% block content %}
     <h1>Sign Up</h1>
     {% if message %}
-        <h2>{{ message.text }}</h2>
+        <div class="alert alert-warning" role="alert">
+            {{message.text}}
+        </div>
     {% endif %}
 <form action="/signup" method="post">
             <div class="form-group col-md-6">

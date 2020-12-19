@@ -1,7 +1,7 @@
 from typing import List, Dict
 import simplejson as json
 import mysql.connector
-from flask import Flask, request, Response, redirect,session
+from flask import Flask, request, Response, redirect, session,flash
 from flask import render_template
 
 from flaskext.mysql import MySQL
@@ -17,7 +17,7 @@ app.config['MYSQL_DATABASE_HOST'] = 'db'
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
 app.config['MYSQL_DATABASE_PORT'] = 3306
-app.config['MYSQL_DATABASE_DB'] = 'finalApp'
+app.config['MYSQL_DATABASE_DB'] = 'gasMileage'
 flask_mysql.init_app(app)
 
 app.config['SECRET_KEY'] = 'top-secret!'
@@ -25,11 +25,12 @@ app.config['MAIL_SERVER'] = 'smtp.sendgrid.net'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'apikey'
-app.config['MAIL_PASSWORD'] = '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'
-app.config['MAIL_DEFAULT_SENDER'] = 'jj79@njit.edu'
+app.config['MAIL_PASSWORD'] = ''
+app.config['MAIL_DEFAULT_SENDER'] = ''
 mail = Mail(app)
 
 user = {'username': 'IS601 Team'}
+
 
 class MyDb:
     def __init__(self):
@@ -47,24 +48,24 @@ class MyDb:
 
     def get_alldata(self):
         cursor = self.connection.cursor(dictionary=True)
-        cursor.execute('SELECT * FROM gasTable')
+        cursor.execute('SELECT * FROM gasTable WHERE user_id=%s', (session['user_id'],))
         return cursor.fetchall()
 
     def get_mileage(self, mileage_id):
         cursor = self.connection.cursor(dictionary=True)
-        cursor.execute('SELECT * FROM gasTable WHERE id=%s', (mileage_id,))
+        cursor.execute('SELECT * FROM gasTable WHERE id=%s AND user_id=%s', (mileage_id, session['user_id']))
         result = cursor.fetchall()
         return result[0]
 
     def update_mileage(self, inputData):
         cursor = self.connection.cursor(dictionary=True)
-        sql_update_query = """UPDATE gasTable t SET t.Gallons = %s, t.Mileage = %s, t.Price = %s WHERE t.id = %s """
+        sql_update_query = """UPDATE gasTable t SET t.Gallons = %s, t.Miles = %s, t.Price = %s, t.Mileage = %s WHERE t.id = %s """
         cursor.execute(sql_update_query, inputData)
         self.connection.commit()
 
     def insert_mileage(self, inputData):
         cursor = self.connection.cursor(dictionary=True)
-        sql_insert_query = """INSERT INTO gasTable (`Gallons`,Mileage,Price) VALUES (%s, %s, %s) """
+        sql_insert_query = """INSERT INTO gasTable (`Gallons`,Miles,Price,user_id,Mileage) VALUES (%s, %s, %s,%s,%s) """
         cursor.execute(sql_insert_query, inputData)
         self.connection.commit()
 
@@ -80,8 +81,11 @@ db = MyDb()
 
 @app.route('/')
 def index():
-    gasTable = db.get_alldata()
-    return render_template('index.html', Price='Home', user=user, gasTable=gasTable)
+    if 'username' in session:
+        return redirect("/home")
+    else:
+        return render_template('index.html')
+
 
 @app.route('/view/<int:mileage_id>', methods=['GET'])
 def record_view(mileage_id):
@@ -97,9 +101,11 @@ def form_edit_get(mileage_id):
 
 @app.route('/edit/<int:mileage_id>', methods=['POST'])
 def form_update_post(mileage_id):
-    inputData = (request.form.get('Gallons'), request.form.get('Mileage'), request.form.get('Price'), mileage_id)
+    mileage = int(request.form.get('Miles')) / int(request.form.get('Gallons'))
+    inputData = (request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), mileage, mileage_id)
     db.update_mileage(inputData)
-    return redirect("/", code=302)
+    return redirect("/home", code=302)
+
 
 @app.route('/mileage/new', methods=['GET'])
 def form_insert_get():
@@ -108,55 +114,24 @@ def form_insert_get():
 
 @app.route('/mileage/new', methods=['POST'])
 def form_insert_post():
-    inputData = (request.form.get('Gallons'), request.form.get('Mileage'), request.form.get('Price'))
+    mileage = int(request.form.get('Miles')) / int(request.form.get('Gallons'))
+    inputData = (
+        request.form.get('Gallons'), request.form.get('Miles'), request.form.get('Price'), session['user_id'], mileage)
     db.insert_mileage(inputData)
-    return redirect("/", code=302)
+    return redirect("/home", code=302)
+
 
 @app.route('/delete/<int:mileage_id>', methods=['POST'])
 def form_delete_post(mileage_id):
     db.delete_mileage(mileage_id)
-    return redirect("/", code=302)
-
-@app.route('/api/v1/mileage')
-def api_mileage() -> str:
-    js = json.dumps(db.get_alldata())
-    resp = Response(js, status=200, mimetype='application/json')
-    return resp
-
-@app.route('/api/v1/mileages/<int:mileage_id>', methods=['GET'])
-def api_retrieve(mileage_id) -> str:
-    result = db.get_mileage(mileage_id)
-    json_result = json.dumps(result)
-    resp = Response(json_result, status=200, mimetype='application/json')
-    return resp
-
-@app.route('/api/v1/mileages/', methods=['POST'])
-def api_add() -> str:
-    inputData = (request.form.get('Gallons'), request.form.get('Mileage'), request.form.get('Price'))
-    db.insert_mileage(inputData)
-    resp = Response(status=200, mimetype='application/json')
-    return resp
-
-
-@app.route('/api/v1/mileages/<int:mileage_id>', methods=['PUT'])
-def api_edit(mileage_id) -> str:
-    inputData = (request.form.get('Gallons'), request.form.get('Mileage'), request.form.get('Price'), mileage_id)
-    db.update_mileage(inputData)
-    resp = Response(status=201, mimetype='application/json')
-    return resp
-
-
-@app.route('/api/mileages/<int:mileage_id>', methods=['DELETE'])
-def api_delete(mileage_id) -> str:
-    db.delete_mileage(mileage_id)
-    resp = Response(status=210, mimetype='application/json')
-    return resp
+    return redirect("/home", code=302)
 
 
 @app.route('/home', methods=['GET'])
 def home():
     if 'username' in session:
-        return render_template('home.html')
+        gasTable = db.get_alldata()
+        return render_template('home.html', Price='Home', user=user, gasTable=gasTable)
     else:
         return render_template('login.html')
 
@@ -171,12 +146,14 @@ def login_user():
     req = request.form
     password = req.get('password').strip()
     cursor = flask_mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM users WHERE email=%s', req.get('email').strip())
+    cursor.execute('SELECT * FROM users WHERE email=%s and is_verified=1', req.get('email').strip())
     result = cursor.fetchall()
     if len(result) != 0:
         result_pass = result[0]['password_hash']
         if check_password_hash(result_pass, password):
             session['username'] = req.get('email')
+            session['user_id'] = result[0]['id']
+            flash('You were successfully logged in')
             return redirect("/home")
         else:
             return render_template("/login.html", message={'text': 'Authentication Failed'})
@@ -190,7 +167,7 @@ def signup():
 
 
 def send_verification(url_token, email):
-    msg = Message('IS601 Final Web Application: Verify Email', recipients=[email])
+    msg = Message('Mileage Tracker: Verify Email', recipients=[email])
     msg.body = 'Thank you for creating an account with IS601 Final Web Application'
     msg.html = ('<h1>Please validate your email by click on the link given below</h1>'
                 'http://127.0.0.1:5000/verify/' + url_token)
@@ -204,6 +181,10 @@ def verify(url_token):
     result = cursor.fetchall()
     if len(result) != 0:
         session['username'] = result[0]['email']
+        session['user_id'] = result[0]['id']
+        cursor.execute('UPDATE users SET is_verified=%s WHERE email=%s', (1, result[0]['email']))
+        flask_mysql.get_db().commit()
+        flash('You were successfully logged in')
         return redirect('/home')
     else:
         return render_template('index.html')
@@ -218,7 +199,7 @@ def create_user():
         return render_template('signup.html', message={'text': 'Passwords does not match'})
     url_token = secrets.token_urlsafe(16)
     cursor = flask_mysql.get_db().cursor()
-    cursor.execute('SELECT * FROM users WHERE id=%s', req.get('email').strip())
+    cursor.execute('SELECT * FROM users WHERE email=%s', req.get('email').strip())
     result = cursor.fetchall()
     if len(result) != 0:
         return render_template('signup.html', message={'text': 'User already exists'})
@@ -236,6 +217,8 @@ def create_user():
 def logout():
     # remove the username from the session if it's there
     session.pop('username', None)
+    session.pop('user_id', None)
+    flash('You were successfully logged out')
     return redirect("/")
 
 
