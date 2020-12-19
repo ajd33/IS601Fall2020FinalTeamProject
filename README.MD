@@ -56,5 +56,8 @@
 - When clicked on view admin can see gas information for that user
 - View page should let the admin edit/delete gas info
 
-<H2>Installation Instructions for Using the App with Docker</H2>
+<H2>Installation Instructions for Using the App with Docker and Pycharm</H2>
 
+1. Go to the [github repository](https://github.com/ajd33/IS601Fall2020FinalTeamProject) and copy the link to download the code. 
+
+<img src="/images/githubDownload.png"alt="HTML5 Icon" style="width:128px;height:128px;">
