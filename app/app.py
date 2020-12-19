@@ -75,6 +75,29 @@ class MyDb:
         cursor.execute(sql_delete_query, (mileage_id,))
         self.connection.commit()
 
+    def get_allusers(self):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM users')
+        return cursor.fetchall()
+
+    def get_users(self, users_id):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM users WHERE id=%s', (users_id,))
+        result = cursor.fetchall()
+        return result[0]
+
+    def update_users(self, inputData):
+        cursor = self.connection.cursor(dictionary=True)
+        sql_update_query = 'UPDATE users u SET u.first_name = %s, u.last_name = %s, u.email = %s, u.is_verified = %s WHERE u.id = %s'
+        cursor.execute(sql_update_query, inputData)
+        self.connection.commit()
+
+    def delete_users(self, users_id):
+        cursor = self.connection.cursor(dictionary=True)
+        sql_delete_query = "DELETE FROM users WHERE id = %s "
+        cursor.execute(sql_delete_query, (users_id,))
+        self.connection.commit()
+
 
 db = MyDb()
 
