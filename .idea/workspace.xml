@@ -191,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608335228199</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Task: readme.md updates">
+      <created>1608336702958</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608336702958</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,11 +231,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Task: readme.md updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="497" y="182" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608259184755">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state x="2641" y="93" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608338975471">
+      <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
     <state x="454" y="202" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.709@0.23.1280.709" timestamp="1607996281575" />
-    <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993727849" />
+    <state x="2641" y="93" width="1094" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608338975471" />
     <state x="497" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259184755" />
     <state x="2748" y="240" key="DockerComposeFileDialog" timestamp="1607993391839">
       <screen x="1982" y="-179" width="1858" height="1080" />
@@ -258,14 +265,14 @@
     </state>
     <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608335230947">
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608336714919">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608335230947" />
-    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608336199341">
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608336714919" />
+    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608339389037">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608336199341" />
+    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608339389037" />
     <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608258857397" />
   </component>
 </project>

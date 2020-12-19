@@ -57,4 +57,38 @@
 
 1. Go to the [github repository](https://github.com/ajd33/IS601Fall2020FinalTeamProject) and copy the link to download the code. 
 
-<img src="/images/githubDownload.png"alt="HTML5 Icon" style="width:128px;height:128px;">
+![GitHub Download](./images/githubDownload.png)
+
+2. In Pycharm, go to VCS in the top bar > "Get from Version Control" then past the link you copied from gitHub to download the repo to your machine. 
+
+![VCS](./images/image2.png)
+
+3. Once you have the repo downloaded, you need to add a docker configuration on the top right. Then click the + symbol and choose a docker compose file.
+
+![Docker Compose](./images/image3.png)
+
+4. Add a compose file, choose the docker-compose.yml file in the root folder. 
+
+![docker-compose.yml](./images/image4.png)
+
+5. Next, run the file by clicking the green play button. You should see that it has been deployed successfully. 
+
+![Run Docker](./images/image5.png)
+
+6. Add an interpreter on the bottom right. Choose docker compose, select the docker-compose.yml file then choose app on the dropdown menu. 
+
+![Interpreter](./images/image6.png)
+
+7. Now add a database. Plus button > DataSource > MySQL. Change the port to 32000. Change the user and password both to "root". Apply and OK. You should see the database pop up. 
+
+![MySQL](./images/image7.png)
+
+8. Run the Flask_App on the bottom left. You should see the URL show up. Click on it to open. 
+
+ ![Flask_App](./images/image8.png)
+ 
+9. You should now be in the app in your web browser! Enjoy! If the link is broken, go to [localhost:5000](localhost:5000) instead. 
+
+![Gas Mileage App!](./images/image9.png)
+
+
