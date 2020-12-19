@@ -87,7 +87,7 @@
 
  ![Flask_App](./images/image8.png)
  
-9. You should now be in the app in your web browser! Enjoy! If the link is broken, go to [localhost:5000](localhost:5000) instead. 
+9. You should now be in the app in your web browser! Enjoy! If the link is broken, go to [localhost:5000](https://localhost:5000) instead. 
 
 ![Gas Mileage App!](./images/image9.png)
 
