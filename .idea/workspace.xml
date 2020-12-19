@@ -16,11 +16,24 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:newadmin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="Task: added intial readme.md">
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IS601Fall2020FinalTeamProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IS601Fall2020FinalTeamProject1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/adminedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/adminedit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/adminusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/adminusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/userview.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/userview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +48,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="b1131dae-be4a-491f-854b-80bb0875b18c" />
+  <component name="JupyterTrust" id="c520b6ee-5352-4996-93b5-d55083736517" />
   <component name="ProjectId" id="1lfSXCk2ATgkMZ7Uj9JYQQCqnT0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -221,24 +237,28 @@
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
     <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993331173" />
-    <state width="797" height="216" key="GridCell.Tab.0.bottom" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="958" height="199" key="GridCell.Tab.0.bottom" timestamp="1608338814284">
+      <screen x="0" y="23" width="1440" height="803" />
     </state>
+    <state width="958" height="199" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1608338814284" />
     <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="797" height="216" key="GridCell.Tab.0.center" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="958" height="199" key="GridCell.Tab.0.center" timestamp="1608338814282">
+      <screen x="0" y="23" width="1440" height="803" />
     </state>
+    <state width="958" height="199" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1608338814282" />
     <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="797" height="216" key="GridCell.Tab.0.left" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="958" height="199" key="GridCell.Tab.0.left" timestamp="1608338814282">
+      <screen x="0" y="23" width="1440" height="803" />
     </state>
+    <state width="958" height="199" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1608338814282" />
     <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="797" height="216" key="GridCell.Tab.0.right" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="958" height="199" key="GridCell.Tab.0.right" timestamp="1608338814283">
+      <screen x="0" y="23" width="1440" height="803" />
     </state>
+    <state width="958" height="199" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1608338814283" />
     <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
     <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608334332314">

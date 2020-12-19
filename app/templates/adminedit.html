@@ -1,19 +1,19 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 {% block content %}
 
 <h5 class="card-title" style="margin-top: 30px">No.{{ mileage.id }}</h5>
 
-<form action="/edit/{{users.id}}" method="post">
+<form action="/adminedit/{{users.id}}" method="post">
 
   <div class="form-group row">
-    <label for="First Name" class="col-sm-2 col-form-label">Gallons</label>
+    <label for="First Name" class="col-sm-2 col-form-label">First Name</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="first_name" name="first_name" value="{{users.first_name}}">
     </div>
   </div>
 
   <div class="form-group row">
-    <label for="Last Name" class="col-sm-2 col-form-label">Mileage</label>
+    <label for="Last Name" class="col-sm-2 col-form-label">Last Name</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="last_name" name="last_name" value="{{users.last_name}}">
     </div>
@@ -29,7 +29,7 @@
 <div class="form-group row">
     <label for="Is Verified" class="col-sm-2 col-form-label">Price</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="email" name="email" value="{{users.is_verified}}">
+      <input type="text" class="form-control" id="is_verified" name="is_verified" value="{{users.is_verified}}">
     </div>
   </div>
 

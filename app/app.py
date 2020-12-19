@@ -244,6 +244,31 @@ def logout():
     flash('You were successfully logged out')
     return redirect("/")
 
+@app.route('/userview/<int:users_id>', methods=['GET'])
+def users_view(users_id):
+    users = db.get_users(users_id)
+    return render_template('userview.html', Price='View Form', user=user, users=users)
+
+
+@app.route('/adminedit/<int:users_id>', methods=['GET'])
+def users_edit_get(users_id):
+    users = db.get_users(users_id)
+    return render_template('adminedit.html', Price='Edit Form', user=user, users=users)
+
+
+@app.route('/adminedit/<int:users_id>', methods=['POST'])
+def users_update_post(users_id):
+    inputData = (request.form.get('first_name'), request.form.get('last_name'), request.form.get('email'), request.form.get('is_verified'), users_id)
+    db.update_users(inputData)
+    return redirect("/", code=302)
+
+
+
+@app.route('/admindelete/<int:users_id>', methods=['POST'])
+def updates_delete_post(users_id):
+    db.delete_users(users_id)
+    return redirect("/", code=302)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
