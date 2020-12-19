@@ -27,22 +27,19 @@
 - Jinja Page
 - Python logic for login
 
-
 <H3>User Home Page - after login - by Andrew Drumm</H3>
 
 - Gas Mileage statistics 
-- Create an sql gas table 
+- SQL gas table 
 - Date purchased input
 - Gallons of gas input
 - Purchase price input
 - Miles driven input
-- MPG calculated(Jeril Jose)
+- MPG calculated column(majority done by Jeril Jose)
 
 - List all records, Add record, edit record, view record
 - Jinja pages
 - Python logic
-- Misc
-
 
 
 <H3>Admin Page - by William Herman</H3>
