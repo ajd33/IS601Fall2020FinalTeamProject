@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
 
-</body>
-</html>
+<h5 class="card-title" style="margin-top: 20px">{{ users.first_name }} - {{ users.last_name }}</h5>
+
+<div class="card" class="m-5 p-2">
+    <ul class="list-group list-group-flush">
+        <li classs="list-group-item">ID {{mileage.id}}</li>
+        <li class="list-group-item">Gallons: {{ mileage.Gallons }}</li>
+        <li class="list-group-item">Mileage: {{ mileage.Mileage }}</li>
+        <li class="list-group-item">Price: {{ mileage.Price }}</li>
+    </ul>
+    <div class="card-body">
+        <form action="/delete/{{mileage.id}}" method="post">
+            <a href="/edit/{{mileage.id}}" class="card-link btn btn-primary">Edit</a>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+</div>
