@@ -248,8 +248,19 @@ def logout():
     flash('You were successfully logged out')
     return redirect("/")
 
+@app.route('/adminusers/', methods=['GET'])
+def users_all():
+    users = db.get_allusers()
+    return render_template('adminusers.html', Price='View Form', user=user, users=users)
+
 @app.route('/userview/<int:users_id>', methods=['GET'])
 def users_view(users_id):
+    users = db.get_users(users_id)
+    gasTable = db.get_usersmileage(users_id)
+    return render_template('userview.html', Price='View Form', user=user, users=users, gasTable=gasTable)
+
+@app.route('/adminusers/userview/<int:users_id>', methods=['GET'])
+def reusers_view(users_id):
     users = db.get_users(users_id)
     gasTable = db.get_usersmileage(users_id)
     return render_template('userview.html', Price='View Form', user=user, users=users, gasTable=gasTable)

@@ -28,7 +28,7 @@ create table if not exists gasMileage.users
 );
 
 INSERT INTO users (first_name, last_name, email, is_admin, is_verified, password_hash)
-VALUES ('Joe', 'Smoe', 'joe_smoe@email.com', 1, 1, 'pbkdf2:sha256:150000$DaMT2glz$178030158244b6661eca2f85540d060f3091bdc99bad89487c7eadc6ad69fae2');
+VALUES ('Joe', 'Smoe', 'joe_smoe@gmail.com', 1, 1, 'pbkdf2:sha256:150000$DaMT2glz$178030158244b6661eca2f85540d060f3091bdc99bad89487c7eadc6ad69fae2');
 
 alter table gasMileage.users
 	add primary key (id);

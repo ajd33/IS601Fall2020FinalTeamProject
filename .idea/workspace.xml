@@ -28,8 +28,7 @@
     <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="first">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/adminedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/adminedit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/userview.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/userview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/adminusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/adminusers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608340261259</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="first">
+      <created>1608342496151</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608342496151</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,5 +281,16 @@
     </state>
     <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608333762174" />
     <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608258857397" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/app.py</url>
+          <line>255</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
