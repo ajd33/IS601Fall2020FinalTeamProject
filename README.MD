@@ -59,15 +59,15 @@
 
 ![GitHub Download](./images/githubDownload.png)
 
-2. In Pycharm, go to VCS in the top bar > "Get from Version Control" then past the link you copied from gitHub to download the repo to your machine. 
+2. In Pycharm, go to VCS in the top bar > "Get from Version Control" then paste the link you copied from gitHub to download the repo to your machine. 
 
 ![VCS](./images/image2.png)
 
-3. Once you have the repo downloaded, you need to add a docker configuration on the top right. Then click the + symbol and choose a docker compose file.
+3. Once you have the repo downloaded, you need to add a docker configuration on the top right. Then click the + symbol and choose the docker compose file.
 
 ![Docker Compose](./images/image3.png)
 
-4. Add a compose file, choose the docker-compose.yml file in the root folder. 
+4. Add the compose file, choose the docker-compose.yml file in the root folder. 
 
 ![docker-compose.yml](./images/image4.png)
 
@@ -90,5 +90,7 @@
 9. You should now be in the app in your web browser! Enjoy! If the link is broken, go to [localhost:5000](https://localhost:5000) instead. 
 
 ![Gas Mileage App!](./images/image9.png)
+
+<P>Note: Due the project being hosted publicly on GitHub, the email key has been removed and the new user functionality is broken as is. You will need to add in the email verification key manually. The key information is included with the canvas project submissions.</P>
 
 
