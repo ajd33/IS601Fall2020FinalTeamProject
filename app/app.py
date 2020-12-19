@@ -181,7 +181,10 @@ def login_user():
             session['username'] = req.get('email')
             session['user_id'] = result[0]['id']
             flash('You were successfully logged in')
-            return redirect("/home")
+            if result[0]['is_admin'] == 1:
+                return redirect("/adminusers")
+            else:
+                return redirect("/home")
         else:
             return render_template("/login.html", message={'text': 'Authentication Failed'})
     else:
