@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="margin-top: 30px">Users View</h2>
+
+<table class="table" style="margin-top: 30px">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for d in users %}
+    <tr>
+        <td><a href="userview/{{d.id}}">{{ d.id }}</a></td>
+        <td>{{ d.first_name }}</td>
+        <td>{{ d.last_name }}</td>
+        <td>{{ d.email }}</td>
+        <td>{{ d.is_verified }}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

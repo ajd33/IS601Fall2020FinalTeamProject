@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS gasTable (
     PRIMARY KEY (id)
 );
 
+INSERT INTO gasTable (Gallons, Miles, Price, Mileage, user_id) VALUES (5, 12, 12, 10000, 1);
+
 create table if not exists gasMileage.users
 (
 	id int auto_increment,
@@ -24,6 +26,9 @@ create table if not exists gasMileage.users
 	constraint users_id_uindex
 		unique (id)
 );
+
+INSERT INTO users (first_name, last_name, email, is_admin, is_verified, password_hash)
+VALUES ('Joe', 'Smoe', 'joe_smoe@gmail.com', 1, 1, 'pbkdf2:sha256:150000$DaMT2glz$178030158244b6661eca2f85540d060f3091bdc99bad89487c7eadc6ad69fae2');
 
 alter table gasMileage.users
 	add primary key (id);

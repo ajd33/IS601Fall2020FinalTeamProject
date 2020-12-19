@@ -1,14 +1,12 @@
-from typing import List, Dict
-import simplejson as json
-import mysql.connector
-from flask import Flask, request, Response, redirect, session,flash
-from flask import render_template
+import secrets
 
+import mysql.connector
+from flask import Flask, request, redirect, session, flash
+from flask import render_template
+from flask_mail import Mail, Message
 from flaskext.mysql import MySQL
 from pymysql.cursors import DictCursor
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_mail import Mail, Message
-import secrets
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -73,6 +71,35 @@ class MyDb:
         cursor = self.connection.cursor(dictionary=True)
         sql_delete_query = """DELETE FROM gasTable WHERE id = %s """
         cursor.execute(sql_delete_query, (mileage_id,))
+        self.connection.commit()
+
+    def get_usersmileage(self, users_id):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM gasTable WHERE user_id=%s', (users_id,))
+        result = cursor.fetchall()
+        return result[0]
+
+    def get_allusers(self):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM users')
+        return cursor.fetchall()
+
+    def get_users(self, users_id):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM users WHERE id=%s', (users_id,))
+        result = cursor.fetchall()
+        return result[0]
+
+    def update_users(self, inputData):
+        cursor = self.connection.cursor(dictionary=True)
+        sql_update_query = 'UPDATE users u SET u.first_name = %s, u.last_name = %s, u.email = %s, u.is_verified = %s WHERE u.id = %s'
+        cursor.execute(sql_update_query, inputData)
+        self.connection.commit()
+
+    def delete_users(self, users_id):
+        cursor = self.connection.cursor(dictionary=True)
+        sql_delete_query = "DELETE FROM users WHERE id = %s "
+        cursor.execute(sql_delete_query, (users_id,))
         self.connection.commit()
 
 
@@ -154,7 +181,10 @@ def login_user():
             session['username'] = req.get('email')
             session['user_id'] = result[0]['id']
             flash('You were successfully logged in')
-            return redirect("/home")
+            if result[0]['is_admin'] == 1:
+                return redirect("/adminusers")
+            else:
+                return redirect("/home")
         else:
             return render_template("/login.html", message={'text': 'Authentication Failed'})
     else:
@@ -220,6 +250,43 @@ def logout():
     session.pop('user_id', None)
     flash('You were successfully logged out')
     return redirect("/")
+
+@app.route('/adminusers/', methods=['GET'])
+def users_all():
+    users = db.get_allusers()
+    return render_template('adminusers.html', Price='View Form', user=user, users=users)
+
+@app.route('/userview/<int:users_id>', methods=['GET'])
+def users_view(users_id):
+    users = db.get_users(users_id)
+    gasTable = db.get_usersmileage(users_id)
+    return render_template('userview.html', Price='View Form', user=user, users=users, gasTable=gasTable)
+
+@app.route('/adminusers/userview/<int:users_id>', methods=['GET'])
+def reusers_view(users_id):
+    users = db.get_users(users_id)
+    gasTable = db.get_usersmileage(users_id)
+    return render_template('userview.html', Price='View Form', user=user, users=users, gasTable=gasTable)
+
+
+@app.route('/adminedit/<int:users_id>', methods=['GET'])
+def users_edit_get(users_id):
+    users = db.get_users(users_id)
+    return render_template('adminedit.html', Price='Edit Form', user=user, users=users)
+
+
+@app.route('/adminedit/<int:users_id>', methods=['POST'])
+def users_update_post(users_id):
+    inputData = (request.form.get('first_name'), request.form.get('last_name'), request.form.get('email'), request.form.get('is_verified'), users_id)
+    db.update_users(inputData)
+    return redirect("/", code=302)
+
+
+
+@app.route('/admindelete/<int:users_id>', methods=['POST'])
+def updates_delete_post(users_id):
+    db.delete_users(users_id)
+    return redirect("/", code=302)
 
 
 if __name__ == '__main__':
