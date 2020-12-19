@@ -1,14 +1,12 @@
-from typing import List, Dict
-import simplejson as json
-import mysql.connector
-from flask import Flask, request, Response, redirect, session,flash
-from flask import render_template
+import secrets
 
+import mysql.connector
+from flask import Flask, request, redirect, session, flash
+from flask import render_template
+from flask_mail import Mail, Message
 from flaskext.mysql import MySQL
 from pymysql.cursors import DictCursor
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_mail import Mail, Message
-import secrets
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -74,6 +72,12 @@ class MyDb:
         sql_delete_query = """DELETE FROM gasTable WHERE id = %s """
         cursor.execute(sql_delete_query, (mileage_id,))
         self.connection.commit()
+
+    def get_usersmileage(self, users_id):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM gasTable WHERE user_id=%s', (users_id,))
+        result = cursor.fetchall()
+        return result[0]
 
     def get_allusers(self):
         cursor = self.connection.cursor(dictionary=True)
@@ -247,7 +251,8 @@ def logout():
 @app.route('/userview/<int:users_id>', methods=['GET'])
 def users_view(users_id):
     users = db.get_users(users_id)
-    return render_template('userview.html', Price='View Form', user=user, users=users)
+    gasTable = db.get_usersmileage(users_id)
+    return render_template('userview.html', Price='View Form', user=user, users=users, gasTable=gasTable)
 
 
 @app.route('/adminedit/<int:users_id>', methods=['GET'])

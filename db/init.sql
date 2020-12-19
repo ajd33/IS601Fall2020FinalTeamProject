@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS gasTable (
     PRIMARY KEY (id)
 );
 
+INSERT INTO gasTable (Gallons, Miles, Price, Mileage, user_id) VALUES (5, 12, 12, 10000, 1);
+
 create table if not exists gasMileage.users
 (
 	id int auto_increment,

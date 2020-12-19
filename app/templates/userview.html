@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h5 class="card-title" style="margin-top: 20px">{{ users.first_name }} - {{ users.last_name }}</h5>
+<h5 class="card-title" style="margin-top: 20px">{{ users.first_name }} {{ users.last_name }}</h5>
 
 <div class="card" class="m-5 p-2">
     <ul class="list-group list-group-flush">
-        <li classs="list-group-item">ID {{users.id}}</li>
-        <li class="list-group-item">First Name: {{ users.first_name }}</li>
-        <li class="list-group-item">Last Name: {{ users.last_name }}</li>
-        <li class="list-group-item">Email: {{ users.email }}</li>
-        <li class="list-group-item">Is Verified: {{ users.is_verified }}</li>
+        <li class="list-group-item">ID: {{gasTable.id}}</li>
+        <li class="list-group-item">Gallons: {{ gasTable.Gallons}}</li>
+        <li class="list-group-item">Miles: {{ gasTable.Miles }}</li>
+        <li class="list-group-item">Price: {{ gasTable.Price }}</li>
+        <li class="list-group-item">Mileage: {{ gasTable.Milage}}</li>
     </ul>
     <div class="card-body">
-        <form action="/admindelete/{{users.id}}" method="post">
-            <a href="/adminedit/{{users.id}}" class="card-link btn btn-primary">Edit</a>
+        <form action="/delete/{{gasTable.id}}" method="post">
+            <a href="/edit/{{gasTable.id}}" class="card-link btn btn-primary">Edit</a>
             <button type="submit" class="btn btn-danger">Delete</button>
         </form>
     </div>

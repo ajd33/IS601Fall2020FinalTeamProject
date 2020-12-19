@@ -25,13 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="Task: added intial readme.md">
-      <change beforePath="$PROJECT_DIR$/.idea/IS601Fall2020FinalTeamProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IS601Fall2020FinalTeamProject1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="first">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/adminedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/adminedit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/adminusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/adminusers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/userview.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/userview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
     </list>
@@ -192,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608334330749</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="first">
+      <created>1608340261259</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608340261259</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +224,8 @@
     <MESSAGE value="bugfix: replaced year with gallons" />
     <MESSAGE value="rixes" />
     <MESSAGE value="Task: added intial readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task: added intial readme.md" />
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="WindowStateProjectService">
     <state x="497" y="182" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608259184755">
@@ -237,28 +242,28 @@
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
     <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993331173" />
-    <state width="958" height="199" key="GridCell.Tab.0.bottom" timestamp="1608338814284">
+    <state width="958" height="199" key="GridCell.Tab.0.bottom" timestamp="1608340890394">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="958" height="199" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1608338814284" />
+    <state width="958" height="199" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1608340890394" />
     <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="958" height="199" key="GridCell.Tab.0.center" timestamp="1608338814282">
+    <state width="958" height="199" key="GridCell.Tab.0.center" timestamp="1608340890393">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="958" height="199" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1608338814282" />
+    <state width="958" height="199" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1608340890393" />
     <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="958" height="199" key="GridCell.Tab.0.left" timestamp="1608338814282">
+    <state width="958" height="199" key="GridCell.Tab.0.left" timestamp="1608340890393">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="958" height="199" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1608338814282" />
+    <state width="958" height="199" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1608340890393" />
     <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="958" height="199" key="GridCell.Tab.0.right" timestamp="1608338814283">
+    <state width="958" height="199" key="GridCell.Tab.0.right" timestamp="1608340890394">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="958" height="199" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1608338814283" />
+    <state width="958" height="199" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1608340890394" />
     <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
     <state width="797" height="216" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
     <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608334332314">
