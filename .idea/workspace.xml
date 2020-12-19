@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="Task: readme.md updates">
+    <list default="true" id="49564ffa-246e-40da-bff3-b95c62c6bf53" name="Default Changelist" comment="Task: added installation instructions to readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +85,7 @@
       <workItem from="1607986691586" duration="4117000" />
       <workItem from="1607993290017" duration="904000" />
       <workItem from="1607996227902" duration="241000" />
+      <workItem from="1608342439997" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="Task: updated DB file">
       <created>1607986847404</created>
@@ -198,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608336702958</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Task: added installation instructions to readme.md">
+      <created>1608339419711</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608339419711</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +236,8 @@
     <MESSAGE value="Task: added intial readme.md" />
     <MESSAGE value="Task: minor fixes" />
     <MESSAGE value="Task: readme.md updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task: readme.md updates" />
+    <MESSAGE value="Task: added installation instructions to readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task: added installation instructions to readme.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2641" y="93" width="754" height="514" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608338975471">
@@ -245,34 +254,34 @@
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
     <state x="2690" y="127" key="FileChooserDialogImpl/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993331173" />
-    <state width="797" height="216" key="GridCell.Tab.0.bottom" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="1248" height="432" key="GridCell.Tab.0.bottom" timestamp="1608342915200">
+      <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="432" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608342915200" />
     <state width="797" height="216" key="GridCell.Tab.0.bottom/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="797" height="216" key="GridCell.Tab.0.center" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="1248" height="432" key="GridCell.Tab.0.center" timestamp="1608342915200">
+      <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="432" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608342915200" />
     <state width="797" height="216" key="GridCell.Tab.0.center/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="797" height="216" key="GridCell.Tab.0.left" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="1248" height="432" key="GridCell.Tab.0.left" timestamp="1608342915200">
+      <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="432" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608342915200" />
     <state width="797" height="216" key="GridCell.Tab.0.left/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state width="797" height="216" key="GridCell.Tab.0.right" timestamp="1608259190862">
-      <screen x="66" y="0" width="1214" height="720" />
+    <state width="1248" height="432" key="GridCell.Tab.0.right" timestamp="1608342915200">
+      <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state width="1248" height="294" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1607993736363" />
+    <state width="1248" height="432" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608342915200" />
     <state width="797" height="216" key="GridCell.Tab.0.right/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608259190862" />
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608336714919">
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2" timestamp="1608339421010">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608336714919" />
-    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608339389037">
+    <state x="2502" y="93" key="Vcs.Push.Dialog.v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608339421010" />
+    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608343750244">
       <screen x="1982" y="-179" width="1858" height="1080" />
     </state>
-    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608339389037" />
+    <state x="2631" y="232" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@1982.-179.1858.1080" timestamp="1608343750244" />
     <state x="490" y="274" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.0.1214.720/1982.-179.1858.1080@66.0.1214.720" timestamp="1608258857397" />
   </component>
 </project>
